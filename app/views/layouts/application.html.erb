@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angulartest</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <style>
+    .glyphicon-thumbs-up {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body ng-app="flapperNews" ng-controller="MainCtrl">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div ng-include="'assets/nav/_nav.html'"></div>
+      <ui-view></ui-view>
+    </div>
+  </div>
+</body>
+</html>
